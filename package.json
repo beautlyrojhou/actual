@@ -10,6 +10,7 @@
     "start": "yarn workspace @actual-app/web start",
     "build": "yarn workspace @actual-app/web build",
     "test": "yarn workspaces run test",
+    "test:coverage": "yarn workspaces run test --coverage",
     "lint": "eslint . --ext .ts,.tsx,.js,.jsx",
     "lint:fix": "eslint . --ext .ts,.tsx,.js,.jsx --fix",
     "typecheck": "yarn workspaces run typecheck",
