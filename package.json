@@ -18,7 +18,8 @@
     "format:check": "prettier --check \"**/*.{ts,tsx,js,jsx,json,md,yaml,yml}\"",
     "prepare": "husky install",
     "clean": "yarn workspaces run clean",
-    "dev": "yarn workspace @actual-app/web start"
+    "dev": "yarn workspace @actual-app/web start",
+    "validate": "yarn lint && yarn typecheck && yarn test"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^6.0.0",
