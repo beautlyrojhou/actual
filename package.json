@@ -16,7 +16,8 @@
     "typecheck": "yarn workspaces run typecheck",
     "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md,yaml,yml}\"",
     "format:check": "prettier --check \"**/*.{ts,tsx,js,jsx,json,md,yaml,yml}\"",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "clean": "yarn workspaces run clean"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^6.0.0",
