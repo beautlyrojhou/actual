@@ -23,7 +23,8 @@
     "test:watch": "yarn workspaces run test --watch",
     "sync-upstream": "git fetch upstream && git merge upstream/master",
     "sync-upstream:rebase": "git fetch upstream && git rebase upstream/master",
-    "log": "git log --oneline --decorate upstream/master..HEAD"
+    "log": "git log --oneline --decorate upstream/master..HEAD",
+    "log:full": "git log --oneline --decorate --graph upstream/master..HEAD"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^6.0.0",
