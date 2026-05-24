@@ -24,7 +24,8 @@
     "sync-upstream": "git fetch upstream && git merge upstream/master",
     "sync-upstream:rebase": "git fetch upstream && git rebase upstream/master",
     "log": "git log --oneline --decorate upstream/master..HEAD",
-    "log:full": "git log --oneline --decorate --graph upstream/master..HEAD"
+    "log:full": "git log --oneline --decorate --graph upstream/master..HEAD",
+    "diff-upstream": "git diff upstream/master...HEAD --stat"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^6.0.0",
