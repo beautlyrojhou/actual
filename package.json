@@ -27,7 +27,8 @@
     "log:full": "git log --oneline --decorate --graph upstream/master..HEAD",
     "diff-upstream": "git diff upstream/master...HEAD --stat",
     "diff-upstream:files": "git diff upstream/master...HEAD --name-only",
-    "open": "open http://localhost:5006"
+    "open": "open http://localhost:5006",
+    "open:server": "open http://localhost:5006 && open http://localhost:5007"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^6.0.0",
