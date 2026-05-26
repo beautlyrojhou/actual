@@ -19,11 +19,9 @@ if (!rootElement) {
 
 const root = createRoot(rootElement);
 
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-);
+// Note: Removed StrictMode because it causes double-invocation of effects
+// in development which makes debugging certain async operations confusing.
+root.render(<App />);
 
 // Enable hot module replacement in development
 if (import.meta.hot) {
